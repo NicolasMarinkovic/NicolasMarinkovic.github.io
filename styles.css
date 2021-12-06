@@ -1,26 +1,39 @@
-.code {
-    color: hotpink;
+header > h1 { 
+    color: maroon;
+    margin-left: 20px;
 }
 
-.img-container {        /* El "." es para la clase  */
+header > h2 { 
+    color:maroon;
+    margin-left: 35px;
+}
+
+.background {
+    background-color: rgb(99, 83, 97);
+}
+
+section {
+    background-color: indianred;
+    color: hotpink;
     text-align: center;
-}
-
-#habilidades {    /*  El # va con id -> es un selector de id. El id se debería usar para 1 elemento */
-    color: hotpink;
-    margin: 15px;
     font-weight: lighter;
-
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border:black;
+    border-width: 5px;
+    border-style: double;
 }
 
-.background_color {
-    background-color: grey;
 
-}
 
-.aside_context {
+aside {                     /* Modifica todos los elementos aside */
     margin-left: 1300px;
-    color: honeydew;
-    background-color: indigo;
+    color: grey;
+    background-color:black;
+
+}
+
+article > p {               /* el selector > modifica todos los hijos directo. En este caso p es hijo directo de article */
+    color: orange;
 
 }
