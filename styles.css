@@ -1,0 +1,26 @@
+.code {
+    color: hotpink;
+}
+
+.img-container {        /* El "." es para la clase  */
+    text-align: center;
+}
+
+#habilidades {    /*  El # va con id -> es un selector de id. El id se debería usar para 1 elemento */
+    color: hotpink;
+    margin: 15px;
+    font-weight: lighter;
+
+}
+
+.background_color {
+    background-color: grey;
+
+}
+
+.aside_context {
+    margin-left: 1300px;
+    color: honeydew;
+    background-color: indigo;
+
+}
