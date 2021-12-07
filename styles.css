@@ -1,6 +1,7 @@
 header > h1 { 
     color: maroon;
     margin-left: 20px;
+    text-align: center;
 }
 
 header > h2 { 
@@ -9,7 +10,7 @@ header > h2 {
 }
 
 .background {
-    background-color: rgb(99, 83, 97);
+    background-color: rgb(187, 179, 186);
 }
 
 section {
@@ -17,11 +18,12 @@ section {
     color: hotpink;
     text-align: center;
     font-weight: lighter;
-    padding-top: 2%;
-    padding-bottom: 1%;
+    padding: 2% 0% 1%; /*Superior 2%, der-izq 0%, inferior 1%. Va con el reloj. */
     border:black;
     border-width: 5px;
     border-style: double;
+    margin: -10px;
+    font-variant: small-caps;
 }
 
 
