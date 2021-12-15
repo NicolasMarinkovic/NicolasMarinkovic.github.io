@@ -1,41 +1,119 @@
-header > h1 { 
-    color: maroon;
-    margin-left: 20px;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #d0d0d3;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebarList {
+    margin-top: 80%;
+}
+
+.wrapper .sidebar {
+    width: 200px;
+    height: 100%;
+    background: #4b4276;
+    padding: 30px 0px;
+    position: fixed;
+}
+
+.wrapper .sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+    color: #bdb8d7;
+    display: block;
+}
+
+.wrapper .sidebar ul li a .fas {
+    width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+    background-color: #594f8d;
+}
+
+.wrapper .sidebar ul li:hover a {
+    color: #fff;
+}
+
+.wrapper .sidebar .social_media {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.wrapper .sidebar .social_media a {
+    display: block;
+    width: 40px;
+    background: #594f8d;
+    height: 40px;
+    line-height: 45px;
     text-align: center;
+    margin: 0 5px;
+    color: #bdb8d7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-header > h2 { 
-    color:maroon;
-    margin-left: 35px;
+.welcome .jumbotron {
+    background-color: rgb(209, 181, 199);
 }
 
-.background {
-    background-color: rgb(187, 179, 186);
+.welcome .jumbotron h1 {
+    margin-left: 200px;
 }
 
-section {
-    background-color: indianred;
-    color: hotpink;
+.welcome .jumbotron h2 {
+    margin-left: 240px;
+}
+
+.welcome .jumbotron .curriculum {
+    margin-left: 240px;
+    display: flex;
+    position: fixed;
+    color: #bdb8d7;
+    background-color: rgb(189, 154, 184);
+}
+
+.welcome .jumbotron .curriculum li {
+    padding: 10px;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.welcome .jumbotron .curriculum li a {
+    color: black;
+    display: block;
+}
+
+.welcome .jumbotron .curriculum li:hover {
+    background-color: rgb(216, 189, 212);
+}
+
+.welcome .jumbotron .curriculum li:hover a {
+    color: #fff;
+}
+
+#introductionText {
     text-align: center;
-    font-weight: lighter;
-    padding: 2% 0% 1%; /*Superior 2%, der-izq 0%, inferior 1%. Va con el reloj. */
-    border:black;
-    border-width: 5px;
-    border-style: double;
-    margin: -10px;
-    font-variant: small-caps;
-}
-
-
-
-aside {                     /* Modifica todos los elementos aside */
-    margin-left: 1300px;
-    color: grey;
-    background-color:black;
-
-}
-
-article > p {               /* el selector > modifica todos los hijos directo. En este caso p es hijo directo de article */
-    color: orange;
-
 }
