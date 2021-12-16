@@ -73,45 +73,25 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.welcome {
+    margin-left: 200px;
+}
+
+.welcome h2 {
+    margin-left: 50px;
+}
 
 .welcome .jumbotron {
     background-color: rgb(209, 181, 199);
 }
 
-.welcome .jumbotron h1 {
-    margin-left: 200px;
-}
-
-.welcome .jumbotron h2 {
-    margin-left: 240px;
-}
-
-.welcome .jumbotron .curriculum {
-    margin-left: 240px;
+#curriculum {
     display: flex;
     position: fixed;
-    color: #bdb8d7;
-    background-color: rgb(189, 154, 184);
 }
 
-.welcome .jumbotron .curriculum li {
-    padding: 10px;
-    border-bottom: 1px solid #bdb8d7;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.welcome .jumbotron .curriculum li a {
-    color: black;
-    display: block;
-}
-
-.welcome .jumbotron .curriculum li:hover {
-    background-color: rgb(216, 189, 212);
-}
-
-.welcome .jumbotron .curriculum li:hover a {
-    color: #fff;
+.welcome .jumbotron .vstack .btn {
+    font-weight: bold;
 }
 
 #introductionText {
