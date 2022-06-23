@@ -8,7 +8,7 @@
     <meta name="url" content="https://nicolasmarinkovic.github.io">
     <meta name="identifier-URL" content="https://nicolasmarinkovic.github.io">
     <meta name="Classification" content="Business">
-    <title>Portfolio</title>
+    <title>Nicolas Marinkovic's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- Agrega el file de CSS (styles.css)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -17,55 +17,94 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
+    <main class="main">
+        <nav id="navbar">
             <ul class="sidebarList">
-                <li><a href="#"><i class="fas fa-home"></i>Welcome</a></li>
-                <li><a href="#"><i class="fas fa-user"></i>About me</a></li>
-                <li><a href="#"><i class="fas fa-project-diagram"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
+                <li><a href="#welcome-section"><i class="fas fa-home"></i>Welcome</a></li>
+                <li><a href="#about-me"><i class="fas fa-user"></i>About me</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-address-book"></i>Contact</a></li>
             </ul>
-            <div class="social_media">
-                <a href="https://github.com/NicolasMarinkovic" target="_blank" rel="no"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/nicolás-marinkovic-4135011b1/" target="_blank" rel="no"><i class="bi bi-linkedin"></i></a>
-                <a href="https://es.stackoverflow.com/users/258110/nicolas-marinkovic" target="_blank" rel="no"><i class="fab fa-stack-overflow"></i></a>
+            <div class="social-media">
+                <a id="profile-link" href="https://github.com/NicolasMarinkovic" target="_blank" rel="no"><i class="bi bi-github"></i></a>
+                <a id="lknd-link" href="https://www.linkedin.com/in/nicolás-marinkovic-4135011b1/" target="_blank" rel="no"><i class="bi bi-linkedin"></i></a>
+                <a id="stk-ovw-link" href="https://es.stackoverflow.com/users/258110/nicolas-marinkovic" target="_blank" rel="no"><i class="fab fa-stack-overflow"></i></a>
             </div>
-        </div>
-    </div>
-    <div class="welcome">
-        <div class="jumbotron">
-            <header>
-                <h1>Nicolas Marinkovic</h1>
-                <h2>Web Developer Jr.</h2>
-            </header>
-            <div class="Empty rows hidden">
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="description" class="jumbotron text-center">
-                <section>
-                    <div id="sayHi"></div>
-                    <div id="introductionText">
-                        <p>Well this is a text that im going to explain myself in the future</p>
-                        <p>I will do a very short introduce of my life</p>
-                    </div>
-                </section>
-                <div class="Empty rows hidden">
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                <div class="vstack gap-2 col-md-5 mx-auto" id="curriculum">
-                    <button id="cvButton" type="button" class="btn btn-outline-secondary">Download curriculum</button>
-                    <div id="messageDownCv">
-                        <p>Not downloaded</p>
-                    </div>
+        </nav>
+
+        <section id="welcome-section">
+            <div class="jumbotron nav-space">
+                <div class="name-subject">
+                    <h1>Nicolas Marinkovic</h1>
+                    <h2>Web Developer Jr.</h2>
                 </div>
             </div>
-            <div class="jumbotron text-center"></div>
-        </div>
-    </div>
+        </section>
+
+        <section id="about-me">
+            <div class="main-description nav-space">
+                <div id="sayHi"></div>
+                <div class="introductionText">
+                    <p>Well this is a text that im going to explain myself in the future</p>
+                    <p>I will do a very short introduce of my life</p>
+                </div>
+            </div>
+            <div id="curriculum">
+                <button id="cvButton" type="button">Download curriculum</button>
+                <div id="messageDownCv">
+                    <p>Not downloaded</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="projects-section-header">These are some of my projects</h2>
+            <div class="projects-grid nav-space">
+                <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+                    <p class="project-title">
+                        <span class="code">&lt;</span> Tribute Page
+                        <span class="code">/&gt;</span>
+                    </p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="project">
+                    <p class="project-title">
+                        <span class="code">&lt;</span> Random Quote Machine
+                        <span class="code">/&gt;</span>
+                    </p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="project">
+                    <p class="project-title">
+                        <span class="code">&lt;</span> JavaScript Calculator
+                        <span class="code">/&gt;</span>
+                    </p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="project">
+                    <p class="project-title">
+                        <span class="code">&lt;</span> Map Data Across the Globe
+                        <span class="code">/&gt;</span>
+                    </p>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-section-header">
+                <h2>Let's work together...</h2>
+                <p>How do you take your coffee?</p>
+            </div>
+            <div class="contact-links">
+                <a href="https://facebook.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://twitter.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="mailto:nicolasnahuel01@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+                <a href="tel:11-3920-4511" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+            </div>
+        </section>
+    </main>
 
 
 
